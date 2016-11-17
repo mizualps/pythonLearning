@@ -1,10 +1,6 @@
-CTYPE html>
-<html>
-<head lang="ja">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block body %}
 {% if is_visible %}
 is_visibleがTrueなので表示します<br>
 {% else %}
@@ -16,7 +12,4 @@ empty_strの文字列は{{ empty_str|length }}です
 {% else %}
 empty_strが空です<br>
 {% endif %}
-</body>
-</html>
-
-
+{% endblock %}
