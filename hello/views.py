@@ -18,3 +18,9 @@ def hello_template(request):
     }
     return render(request, 'index.html', d);
 
+def hello_if(request):
+    d = {
+      'is_visible': False,
+      'empty_str': '',
+    }
+    return render(request, 'if.html', d)
